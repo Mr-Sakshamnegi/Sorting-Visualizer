@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="Sorting.css">
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <button onclick="generateArray()">Generate New Array</button>
+      <label for="speed">Sorting Speed:</label>
+      <input type="range" id="speed" name="speed" min="1" max="100" value="10" onchange="updateSpeed(this.value,this.max)">
+      <label for="arraySize">Array Size:</label>
+      <input type="range" id="arraySize" name="arraySize" min="10" max="150" value="5" onchange="updateArraySize(this.value)">
+      <button onclick="bubbleSort()">Bubble Sort</button>
+      <button onclick="selectionSort()">Selection Sort</button>
+      <button onclick="insertionSort()">Insertion Sort</button>
+      <button onclick="mergeSort()">Merge Sort</button>
+      <button onclick="quickSort()">Quick Sort</button>
+      <button onclick="heapSort()">Heap Sort</button>
+    </div>
+    <div id="bars-container">
+      <!-- Bars will be dynamically created here -->
+    </div>
+  </div>
+  <script src="Sorting.js"></script>
+</body>
+</html>

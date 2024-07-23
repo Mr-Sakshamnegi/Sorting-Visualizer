@@ -1,0 +1,87 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-right: 20px;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+}
+.container {
+  text-align: center;
+  width: 80%;
+}
+.controls {
+  margin-bottom: 20px;
+}
+.controls button,
+.controls input[type="range"],
+.controls label {
+  margin: 6px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.controls button {
+  background-color: #000;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+.controls button:hover {
+  background-color: #f30fc5;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+}
+.controls input[type="range"] {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 5px;
+  background: linear-gradient(to right, #ff00ff, #00ffff);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+.controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.controls input[type="range"]::-webkit-slider-thumb:hover {
+  background: #def603;
+  transform: scale(1.2);
+}
+.controls label {
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+#bars-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 400px;
+  width: 100%;
+  margin: 20px auto;
+  background-color: rgba(0, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+.bar {
+  width: 10px;
+  margin: 0 1px;
+  background-color: #09ff00;
+  transition: height 0.3s ease;
+  box-shadow: 0 0 10px rgba(23, 22, 22, 0.878);
+}
+.bar.swap {
+  background-color: #ff0707;
+  box-shadow: 0 0 10px rgb(195, 27, 27);
+}
